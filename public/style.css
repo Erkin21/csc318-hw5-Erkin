@@ -1,0 +1,73 @@
+/* styles.css */
+
+html,
+body {
+  height: 99%;
+  background-image: url("https://img.freepik.com/free-vector/dark-blue-polygonal-mosaic-background_1035-18012.jpg");
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 15px;
+  padding: 0;
+  display: flex; /* Added to make body a flex container */
+  flex-direction: column; /* Added to arrange vertically */
+}
+
+.header {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+.box-title {
+  margin-bottom: 10px;
+}
+
+.collect {
+  margin-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 225px;
+}
+
+.box {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.add-quote-box,
+.darth-invades-box,
+.remove-vader-box {
+  width: calc(33.333% - 10px);
+}
+
+.quotes-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  flex: 1; /* Use flex property to take up remaining space */
+  overflow-y: hidden; /* Add scrollbar if content overflows */
+  background-color: white;
+}
+
+.quotes {
+  padding-left: 30px;
+  margin: 0;
+}
+
+.quote {
+  margin-bottom: 10px;
+}
